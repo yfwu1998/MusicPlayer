@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+
+/*导航栏开始*/
+.box_head{
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    background:rgb(54,54,54);
+    box-shadow: DimGrey 2px 2px 6px;
+    margin:0 auto ;
+    /*opacity: 0.8;*/
+    z-index: 1000;
+}
+#logo{
+    height: 64px;
+    width: auto;
+}
+/*搜索框*/
+#find{
+    width: 280px;
+    padding-left: 100px;
+    padding-top: 18px;
+    font-family: 'Microsoft YaHei';
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+input{
+    width: 180px;
+    border: 1px solid #e2e2e2;
+    height: 30px;
+    float: left;
+    padding:0 0 0 10px;
+    border-radius: 20px 0  0 20px;
+}
+#search{
+    width: 65px;
+    height: 32px;
+    float: left;
+    background: DodgerBlue;
+    color: white;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+}
+/*文字菜单栏*/
+.one{
+    height: 65px;
+    width: 1000px;
+    margin: 0 auto;
+}
+.box_head .one ul{
+    display: inline-block;
+    padding-left: 70px;
+    vertical-align: text-bottom;
+}
+.box_head .one ul li{
+    width: auto;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    padding-right: 15px;
+}
+.box_head .one ul li a{
+    color: white;
+    font-size: 18px;
+}
+.box_head .one ul li a:hover{
+    color: DodgerBlue;
+}
+/*中心内容*/
+.box_body{
+    width: 100%;
+    height: 100%;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(#EE0000, DodgerBlue,#00EE00); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#EE0000, DodgerBlue,#00EE00); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#EE0000, DodgerBlue,#00EE00); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#EE0000, DodgerBlue,#00EE00); /* 标准的语法（必须放在最后） */
+    position: relative;
+    margin: 0 auto;
+    z-index: 500;
+}
+
+.bg-blur {
+    position: absolute;
+    width: 100%;
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    background-size: cover;
+    -webkit-filter: blur(150px);
+    -moz-filter: blur(150px);
+    -o-filter: blur(150px);
+    -ms-filter: blur(150px);
+    filter: blur(150px);
+    z-index: 501;
+}
+.cover{
+    width: 400px;
+    height: 400px;
+    background: white;
+    position: absolute;
+    left:50%;
+    margin-left: -480px;
+    top: 100px;
+    z-index: 600;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.music_name {
+    width: 400px;
+    height: 50px;
+    background: white;
+    position: absolute;
+    left:50%;
+    margin-left: 30px;
+    top: 100px;
+    z-index: 600;
+    border-radius: 20px;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 25px;
+    line-height: 50px;
+}
+.music_lyric{
+    width: 430px;
+    height: 345px;
+    background: white;
+    position: absolute;
+    left:50%;
+    margin-left: 30px;
+    top: 155px;
+    z-index: 600;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+
+}
+/*底部播放器*/
+.box_foot{
+    width: 100%;
+    height: 84px;
+    /*background: bisque;*/
+    position: fixed;
+    bottom: 0px;
+    z-index: 1000;
+}
+embed{
+    width: 100%;
+    height: 84px;
+    position: fixed;
+    z-index: 1001;
+}
